@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="com.purcellmurray.inventory.MenuActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="#22111111"
+        >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="5dp"
+            android:background="@mipmap/icon_home_logo"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PURCELL MURRAY"
+            android:layout_marginLeft="5dp"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="#00000000">
+        <Button
+            android:id="@+id/btn_brand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00ffffff"
+            android:text="     Browse by Brand"
+            android:layout_gravity="start"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:drawableLeft="@mipmap/brand"
+            android:textSize="20dp"
+            android:layout_marginBottom="5dp"
+            android:onClick="toBrand"
+            android:backgroundTint="@color/colorHint"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00ffffff"
+            android:text="     Browse by Category"
+            android:layout_gravity="start"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:drawableLeft="@mipmap/category"
+            android:textSize="20dp"
+            android:onClick="toCategories"
+            android:layout_marginBottom="5dp"
+
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00ffffff"
+            android:text="     Search"
+            android:layout_gravity="start"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:drawableLeft="@mipmap/search"
+            android:textSize="20dp"
+            android:onClick="toProduct"
+            android:layout_marginBottom="25dp"
+
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00ffffff"
+            android:text="     Favorites"
+            android:layout_gravity="start"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:drawableLeft="@mipmap/favorites"
+            android:textSize="20dp"
+            android:layout_marginBottom="5dp"
+            android:onClick="toProduct"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00ffffff"
+            android:text="     Tracked Products"
+            android:layout_gravity="start"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:drawableLeft="@mipmap/tracking"
+            android:textSize="20dp"
+            android:layout_marginBottom="5dp"
+            android:onClick="toProduct"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00ffffff"
+            android:text="     Recently Viewed"
+            android:layout_gravity="start"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:drawableLeft="@mipmap/recent"
+            android:textSize="20dp"
+            android:layout_marginBottom="25dp"
+            android:onClick="toProduct"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00ffffff"
+            android:text="     Log Out"
+            android:layout_gravity="start"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:drawableLeft="@mipmap/logout"
+            android:textSize="20dp"
+            android:layout_marginBottom="5dp"
+            android:onClick="toLogin"
+            />
+    </LinearLayout>
+</LinearLayout>
